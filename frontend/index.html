@@ -7,6 +7,81 @@
 </head>
 <body>
     <h1>Games App</h1>
+    <nav class="navbar navbar-dark bg-dark">
+        <h2 class="text-white mx-auto">Games to play</h2>
+    </nav>
+
+    <div class="container">
+        <div id="errors">
+            <!-- errors -->
+        </div>
+    </div>
+
+    <!-- genre form -->
+    <form id="genre form">
+        <div>
+            <input 
+            class="form-control form-control-sm"
+            type="text" 
+            placeholder="Enter name of a new genre to create" 
+            id="create-genre-text"
+            />
+        </div>
+        <div>
+            <input 
+            class="btn btn-primary btn-sm"
+            type="submit" 
+            value="Create Genre"
+            id="create-genre-btn"
+            />
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- games form -->
+    <form id="game-form">
+        <div>
+           <select class="custom-select" id="genre-select">
+               <option selected>Select Genre</option>
+           </select>
+           <div>
+               <input 
+               class="form-control form-control-sm"
+               type="text" 
+               placeholder="Title"
+               id="create-game-title-text"/>
+           </div>
+           <div>
+                <input 
+                class="form-control form-control-sm"
+                type="text" 
+                placeholder="Length"
+                id="create-game-length-text"/>
+            </div>
+            <div>
+                <label class="form-check-label" for="create-game-played-check">Played?</label>
+                <input 
+                class="form-control form-control-sm"
+                type="checkbox" 
+                id="create-game-played-text"/>
+            </div>
+            <div>
+                <input 
+                class="btn btn-danger btn-sm"
+                type="submit"
+                value="Create Game"
+                id="create-game-btn"
+                />
+            </div>
+        </div>
+    </form>
+
+    <div clas="genres mt-5">
+        <div id="accordion">
+
+        </div>
+    </div>
 
     <script src="javascripts/index.js"></script>
 </body>
