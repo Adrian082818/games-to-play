@@ -6,8 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Genre.create([
-    {name: "Thriller"},
-    {name: "Mystery"},
-    {name: "Horror"}
+# Genre.create([
+#     {name: "Thriller"},
+#     {name: "Mystery"},
+#     {name: "Horror"}
+# ])
+
+Game.create([
+    {title: "The Witcher", length: 100, has_played: true }
 ])
