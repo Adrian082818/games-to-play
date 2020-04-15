@@ -12,6 +12,11 @@
 #     {name: "Horror"}
 # ])
 
-Game.create([
-    {title: "The Witcher", length: 100, has_played: true }
-])
+# Game.create([
+#     {title: "The Witcher", length: 100, has_played: true, genre_id: 1},
+#     {title: "Bloodborne", length: 50, has_played: true, genre_id: 2},
+#     {title: "God Of War", length: 100, has_played: true, genre_id: 3}
+# ])
+
+# Genre.find_by_id(1).update(game_ids: [1, 2])
+# Genre.find_by_id(2).update(game_ids: [1, 2, 3])
