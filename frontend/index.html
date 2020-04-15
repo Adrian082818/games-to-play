@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Games To Play</title>
 </head>
 <body>
@@ -19,21 +25,23 @@
 
     <!-- genre form -->
     <form id="genre form">
-        <div>
-            <input 
-            class="form-control form-control-sm"
-            type="text" 
-            placeholder="Enter name of a new genre to create" 
-            id="create-genre-text"
-            />
+        <div class="row mt-2">
+            <div class="=col-10">
+                <input 
+                class="form-control form-control-sm"
+                type="text" 
+                placeholder="Enter name of a new genre to create" 
+                id="create-genre-text"
+                />
         </div>
-        <div>
+        <div class="col-2">
             <input 
             class="btn btn-primary btn-sm"
             type="submit" 
             value="Create Genre"
             id="create-genre-btn"
             />
+          </div>
         </div>
     </form>
 
@@ -41,32 +49,34 @@
 
     <!-- games form -->
     <form id="game-form">
-        <div>
+        <div class="row mt-2">
+          <div class="col-3">
            <select class="custom-select" id="genre-select">
                <option selected>Select Genre</option>
            </select>
-           <div>
+          </div>
+           <div class="col-2">
                <input 
                class="form-control form-control-sm"
                type="text" 
                placeholder="Title"
                id="create-game-title-text"/>
            </div>
-           <div>
+           <div class="col-2">
                 <input 
                 class="form-control form-control-sm"
                 type="text" 
                 placeholder="Length"
                 id="create-game-length-text"/>
             </div>
-            <div>
+            <div class="col-3">
                 <label class="form-check-label" for="create-game-played-check">Played?</label>
                 <input 
                 class="form-control form-control-sm"
                 type="checkbox" 
                 id="create-game-played-text"/>
             </div>
-            <div>
+            <div class="col-2">
                 <input 
                 class="btn btn-danger btn-sm"
                 type="submit"
@@ -83,6 +93,26 @@
         </div>
     </div>
 
-    <script src="javascripts/index.js"></script>
+    <!-- bootstrap -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- application -->
+    <!-- <script src="main.js"></script> -->
+    <script src="javascripts/game.js"></script>
+    <script src="javascripts/genre.js"></script>
 </body>
 </html>
