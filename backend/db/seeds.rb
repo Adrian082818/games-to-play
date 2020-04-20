@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 genres = Genre.create([
-    {name: "Thriller"},
-    {name: "Mystery"},
-    {name: "Horror"},
-    {name: "RPG"}
+    { name: "Thriller" },
+    { name: "Mystery" },
+    { name: "Horror" },
+    { name: "RPG" }
 ])
 
 games = Game.create([
